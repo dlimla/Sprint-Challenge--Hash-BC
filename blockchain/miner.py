@@ -70,12 +70,12 @@ if __name__ == '__main__':
     coins_mined = 0
 
     # Load or create ID
-    f = open("my_id.txt", "r")
+    f = open("/Users/danhe/Desktop/Sprint-Challenge--Hash-BC/blockchain/my_id.txt", "r")
     id = f.read()
     print("ID is", id)
     f.close()
 
-    if id == 'danHEElim\n':
+    if id == 'NONAME\n':
         print("ERROR: You must change your name in `my_id.txt`!")
         exit()
     # Run forever until interrupted
