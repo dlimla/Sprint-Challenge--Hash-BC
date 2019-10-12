@@ -26,12 +26,16 @@ During your challenge, you will be pulled aside by a PM for a 5 minute interview
 
 Explain in detail the workings of a dynamic array:
 * What is the runtime complexity to access an array, add or remove from the front, and add or remove from the back?
+    <!-- the runtime is dependent on the size of the array to add or remove from the front since you have to move everything once foward or backwards once you add it.  Unless you have a linkedlist in which you just remove or replace the head of the list.  Same with the back, and in order to access the list if you have the index of the item it goes ot 0(1) since it's a once time find picking out of the list.  Though if you are looping through the list the runtime goes up since it's dependent on the size of the list so o(n log n) if you are looking through a random assortment of a list if not it's usually o(n)-->
+
 * What is the worse case scenario if you try to extend the storage size of a dynamic array?
+    <!-- you run out of space in the data world as you loop and  it crashes ideally but if not then it runs forever trying to expand the array while it can't and slows down your machine to a standstill making working impossible for your client and yourself. -->
 
 Explain how blockchain networks remain in consensus:
 * What does a node do if it gets a message from another in the network with a new block?
+    <!-- it checks it list of nodes of the block to see if that node is ahead or not and it add's it to the list if it gets so far behind it exchanges his old list with the new updated one.   -->
 * Why can't someone cheat by changing a transaction from an earlier block to give themselves coins?
-
+    <!-- since everything in the chain must have a proof and history if a chain block is being worked on and it's on block 100 and someone wants to change 50 then that person has to change an additional 50 blocks so it matches up and get it to work properly.  Fortunally the time it takes to change one block is VASTLY longer then it takes to mine a new block and add it to the chain.  So by the time that person has changed 50,51, and 52 a new block of 101, 102,103,104 and 105 have been added.  So there is really no end in sight making it impossible to "hack" since the miners are always a step ahead.   -->
 ## Project Set Up
 
 #### [Hash Tables]
